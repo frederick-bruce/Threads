@@ -15,7 +15,6 @@ export default async function Home() {
         {result.posts.length === 0 ? (
           <p className="no-result">No threads found</p>
         ) : (
-          result.posts.map((post) => (
             <>
               {result.posts.map((post) => (
                 <ThreadCard
@@ -31,8 +30,7 @@ export default async function Home() {
                 />
               ))}
             </>
-          ))
-        )}
+          )}
       </section>
     </>
   );
